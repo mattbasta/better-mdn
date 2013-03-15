@@ -1,0 +1,363 @@
+html {
+    background: #f1f1f1;
+}
+
+body {
+    padding-top: 49px;
+}
+
+#masthead {
+    border-bottom: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    min-height: 0;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#masthead,
+#masthead .wrap {
+    background: linear-gradient(to bottom, #888883 53%,#777774 100%);
+}
+#masthead .wrap {
+    padding-top: 47px;
+}
+
+#branding {
+    margin: 0;
+    padding: 0 0 0 35px;
+}
+
+#branding #logo img {
+    height: 35.5px;
+    width: 31px;
+}
+
+#logo > a {
+    float: left;
+}
+
+#headshorts {
+    color: #333;
+    display: inline-block;
+    font-family: "Open Sans", "OpenSansWeb", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+    margin-left: 2em;
+    position: absolute;
+    text-transform: none;
+}
+#headshorts span {
+    display: block;
+    margin-bottom: 3px;
+}
+#headshorts span kbd {
+    background: #fafafa;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 #aaa;
+    display: inline-block;
+    text-align: center;
+    width: 1em;
+}
+
+#site-search {
+    display: none;
+}
+#masthead #bastasearch {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 2.5em;
+
+    position: absolute;
+    top: 6px;
+    right: 300px;
+    left: 40px;
+}
+#bastasearch-results {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 2000;
+    overflow: hidden;
+    color: #000;
+    background: rgba(255, 255, 255, 0.65);
+}
+#bastasearch-results a {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.wrap {
+    max-width: none;
+    width: 98%;
+}
+
+.topicpage-table .Documentation,
+.topicpage-table .Community,
+.topicpage-table .Tools,
+.topicpage-table .Related_Topics {
+    background-image: none;
+    padding: 18px 0 0;
+    text-align: center;
+}
+
+
+.page-content h1, .page-content h2, .page-content h3,
+.page-content h4, .page-content h5, .page-content h6,
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", "OpenSansWeb", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+}
+
+.page-content h5, .page-content h6,
+h5, h6 {
+    font-weight: 600;
+}
+
+#article-head {
+    background: none;
+    max-width: none;
+}
+
+#wikiArticle {
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#wikiArticle.toc-after {
+    margin-right: 250px;
+}
+#article-nav {
+    background: none;
+    overflow-y: auto;
+    padding: 0;
+
+    position: fixed;
+    top: 144px;
+    bottom: 20px;
+    right: 15px;
+}
+#article-nav .page-toc {
+    background: #e5e5e5;
+    border: 0;
+}
+.page-toc li li li {display: none;}
+.page-toc h2 {display: none;}
+
+
+.page-content code, .pageText tt {
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+
+.page-content pre {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 1em;
+}
+.page-content pre code {
+    background-color: inherit;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+pre.syntaxbox {
+    background: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.topicpage-table .section,
+.section {
+    float: left;
+    padding-right: 30px;
+    width: -webkit-calc(50% - 66px);
+}
+
+div.note {
+    background: rgb(255, 253, 236);
+    border: 1px solid rgb(233, 230, 190);
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.page-content dt {font-weight: normal;}
+
+article p {
+    max-width: 700px;
+}
+
+.cssprop {
+    border-left-width: 2px;
+    border-radius: 3px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 0.9em;
+    padding: 1em;
+}
+.cssprop li,
+.cssprop dfn {
+    padding-left: 0 !important;
+}
+.cssprop li dfn {
+    font-weight: bold;
+}
+
+
+/* Making the homepage pretty. */
+#home-search,
+#top-docs {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    margin: 0 auto 40px;
+    overflow: hidden;
+    padding: 19px;
+    width: 60%;
+}
+
+#home-search h1,
+#top-docs h1 {
+    font: normal 24px/1.1 "Bebas Neue","League Gothic",Haettenschweiler,"Arial Narrow",sans-serif;
+    letter-spacing: .5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#home-search input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    display: block;
+    font-size: 32px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.results {margin-top: 1em;}
+.results a {
+    border-top: 1px solid #ddd;
+    display: block;
+    font-size: 1.25em;
+    padding: 1em;
+}
+.results a:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.title {
+    margin-right: 250px;
+}
+
+#page-buttons {
+    width: 230px;
+}
+
+/* Things nobody cares about. */
+#masthead #nav {display: none;}
+#footbar {display: none;}
+
+#home-promos, .home-extra {display: none;}
+
+#site-info {
+    background: #e3e3e3;
+    border-top: 0;
+    color: #333;
+    padding: 20px 0;
+}
+#site-info .wrap {
+    background: transparent;
+    padding-left: 20px;
+}
+#site-info #legal {
+    padding-left: 0;
+}
+#site-info #legal img {
+    display: none;
+}
+#site-info a:link {
+    color: #666;
+    text-decoration: underline;
+}
+#site-info a:visited {color: #999;}
+
+code:empty {display:none;}
+
+.minVer {
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #fff;
+    opacity: 0.3;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+div:hover > .minVer {
+    box-shadow: 1px 1px 1px #ccc;
+    opacity: 1;
+}
+
+#content .wrap.sidebar {
+    background: none;
+}
+#content-main {
+    width: auto;
+    margin-right: 250px;
+}
+#content-sub {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    top: 50px;
+    overflow-y: auto;
+}
+
+
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Light-webfont.eot');
+    src: url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Regular-webfont.eot');
+    src: url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansWeb';
+    src: url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Semibold-webfont.eot');
+    src: url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('https://marketplace.cdn.mozilla.net/media/css/mkt/fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}

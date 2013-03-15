@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Better MDN",
+  "description": "Improves the MDN interface to not be terribad.",
+  "version": "0.1",
+
+  "permissions": [
+    "https://developer.mozilla.org/"
+  ],
+  "background": {
+    "scripts": ["fetcher.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://developer.mozilla.org/*"],
+      "js": ["bettermdn.user.js"]
+    }
+  ]
+}

@@ -328,6 +328,15 @@ div:hover > .minVer {
     overflow-y: auto;
 }
 
+#tabzilla-panel {
+    box-shadow: 0 0 10px;
+    z-index: 1000;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
 
 @font-face {
     font-family: 'OpenSansWeb';

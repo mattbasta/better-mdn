@@ -209,6 +209,9 @@ window.addEventListener('click', function(e) {
     if (!at) {
         return;
     }
+    if (at.id === 'tabzilla') {
+        return;
+    }
 
     var href = at.attributes.getNamedItem("href").value;
     if (href && href[0] === '#') {

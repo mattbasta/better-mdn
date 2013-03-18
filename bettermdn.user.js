@@ -32,26 +32,6 @@ function process_document() {
         parent.parentNode.insertBefore(nav, parent.nextSibling);
         parent.className += ' toc-after';
     }
-
-    // Get ready for Prism
-    var pres = document.getElementsByTagName('pre');
-    for (var i = 0; i < pres.length; i++) {
-        (function(e) {
-            if (e.className.indexOf('brush:') === -1) {
-                return;
-            }
-            var lang = e.className.substr(e.className.indexOf(': ') + 2);
-            if (lang === 'js')
-                lang = 'javascript';
-            e.className = '';
-
-            var c = document.createElement('code');
-            c.className = 'language-' + lang;
-            c.innerHTML = e.innerHTML;
-            e.innerHTML = '';
-            e.appendChild(c);
-        })(pres[i]);
-    }
 }
 process_document();
 
